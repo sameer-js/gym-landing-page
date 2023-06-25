@@ -8,8 +8,6 @@ type Props = {
   setSelectedPage: (value: SelectedPage) => void;
 }
 
-const inputStyles = `w-full rounded-lg bg-primary-300 mb-5 px-5 py-3 placeholder-white`;
-
 const ContactUs = ({ setSelectedPage }: Props) => {
     
   const { register, trigger, formState: {errors} } = useForm();
@@ -60,7 +58,7 @@ const ContactUs = ({ setSelectedPage }: Props) => {
           }}>
             <form target="_blank" onSubmit={onSubmit} method="POST" action="http://formsubmit.co/your@email.com">
 
-              <input className={inputStyles} type="text" placeholder="NAME" {...register("name", {
+              <input className="inputStyles md:h-16" type="text" placeholder="NAME" {...register("name", {
                 required: true,
                 maxLength: 64
               })} />
@@ -71,7 +69,7 @@ const ContactUs = ({ setSelectedPage }: Props) => {
                 </p>
               )}
 
-              <input className={inputStyles} type="email" placeholder="EMAIL" {...register("email", {
+              <input className="inputStyles md:h-16" type="email" placeholder="EMAIL" {...register("email", {
                 required: true,
                 pattern: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
               })} />
@@ -82,7 +80,7 @@ const ContactUs = ({ setSelectedPage }: Props) => {
                 </p>
               )}
 
-              <textarea className={inputStyles} rows={4} cols={50} placeholder="MESSAGE" {...register("message", {
+              <textarea className="inputStyles" rows={10} cols={50} placeholder="MESSAGE" {...register("message", {
                 required: true,
                 maxLength: 2000
               })} />

@@ -11,3 +11,7 @@ html, body,
     font-family: "DM Sans", sans-serif;
     @apply text-gray-500;
 }
+
+.inputStyles {
+    @apply w-full rounded-lg bg-primary-300 mb-5 px-5 py-3 placeholder-white;
+}

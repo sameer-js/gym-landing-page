@@ -20,3 +20,5 @@ Runs the app in development mode.
 You can learn more about [TypeScript](https://www.typescriptlang.org), [Vite](https://vitejs.dev/guide/) and [TailWindCSS](https://tailwindcss.com).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+
+Deployed on [gym-landing-page](https://gym-landing-page-2ud.pages.dev/)

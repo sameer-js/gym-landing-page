@@ -1,7 +1,7 @@
 # gym-landing-page
 
 Landing page for a gym website.\
-Created using React in TypeScript and TailWindCSS (initialized locally using Vite).
+Created using React in TypeScript and TailWindCSS (initialized locally using Vite)
 
 ## Available Scripts
 
